@@ -1,0 +1,21 @@
+{
+  "last_updated": "2025-01-13T14:35:00+02:00",
+  "pin_hash": "",
+  "summary": {
+    "total_worked_seconds": 0,
+    "total_required_seconds": 0,
+    "balance_seconds": 0,
+    "year_norm_seconds": 0,
+    "year_remaining_days": 0,
+    "required_per_day_with_balance": 28800
+  },
+  "week_rhythm": {
+    "status": "on_track",
+    "diff_seconds": 0
+  },
+  "events": [],
+  "daily": [],
+  "weekly": [],
+  "monthly": [],
+  "yearly": []
+}
