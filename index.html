@@ -204,6 +204,15 @@
     <div id="sessions-list" style="margin-top:12px"></div>
   </div>
 
+  <!-- Paskutinės 30 dienų -->
+  <div class="card">
+    <h2>Paskutinės 30 dienų</h2>
+    <table>
+      <thead><tr><th>Data</th><th>Diena</th><th>Tipas</th><th>Pradirbta</th><th>Reikėjo</th><th>Skirtumas</th></tr></thead>
+      <tbody id="days30-tbody"></tbody>
+    </table>
+  </div>
+
   <!-- Savaitės suvestinė -->
   <div class="card">
     <h2>Savaitės suvestinė</h2>
@@ -333,7 +342,8 @@ async function verifyPin() {
     unlock();
   } else {
     pinAttempts++;
-    if (pinAttempts >= 3) {
+    const MAX_ATTEMPTS = 5;
+    if (pinAttempts >= MAX_ATTEMPTS) {
       pinBlockedUntil = Date.now() + 30000;
       pinAttempts = 0;
       const el = document.getElementById('pin-blocked');
@@ -343,7 +353,7 @@ async function verifyPin() {
       setTimeout(() => { el.style.display = 'none'; }, 30000);
     } else {
       document.getElementById('pin-error').textContent =
-        `Neteisingas PIN. Liko bandymų: ${3 - pinAttempts}`;
+        `Neteisingas PIN. Liko bandymų: ${MAX_ATTEMPTS - pinAttempts}`;
     }
     digits.forEach(d => d.value = '');
     digits[0].focus();
@@ -409,6 +419,9 @@ function render(d) {
 
   // Šiandien
   renderToday(d);
+
+  // 30 dienų lentelė
+  renderDays30Table(d.daily || []);
 
   // Savaitės lentelė
   renderWeekTable(d.weekly || []);
@@ -485,6 +498,36 @@ function renderToday(d) {
   sl.innerHTML = html;
 }
 
+function renderDays30Table(daily) {
+  const DAY_LT = ['Sk','Pr','A','T','K','Pn','Š'];
+  const TYPE_LT = { workday: 'Darbo', weekend: 'Savaitg.', holiday: 'Šventė' };
+  const tbody = document.getElementById('days30-tbody');
+  const today = new Date();
+  const rows = [];
+  for (let i = 29; i >= 0; i--) {
+    const d = new Date(today);
+    d.setDate(d.getDate() - i);
+    const ds = d.toISOString().substring(0, 10);
+    const entry = (daily || []).find(x => x.date === ds) || { date: ds, worked_seconds: 0, required_seconds: 0, day_type: 'workday' };
+    const w = entry.worked_seconds || 0;
+    const r = entry.required_seconds || 0;
+    const diff = w - r;
+    const dayName = DAY_LT[d.getDay()];
+    const typeStr = TYPE_LT[entry.day_type] || entry.day_type || '';
+    const isToday = (i === 0);
+    const rowStyle = isToday ? ' style="font-weight:700;background:rgba(96,165,250,.08)"' : '';
+    rows.push(`<tr${rowStyle}>
+      <td>${ds}${isToday ? ' <span class="c-blue">◀</span>' : ''}</td>
+      <td>${dayName}</td>
+      <td class="${entry.day_type === 'holiday' ? 'c-yellow' : entry.day_type === 'weekend' ? 'c-blue' : 'c-gray'}">${typeStr}</td>
+      <td>${w > 0 ? fmtSec(w) : '<span class="c-gray">—</span>'}</td>
+      <td>${fmtSec(r)}</td>
+      <td class="${diffClass(diff)}">${r > 0 ? fmtDiff(diff) : '<span class="c-gray">—</span>'}</td>
+    </tr>`);
+  }
+  tbody.innerHTML = rows.join('');
+}
+
 function renderWeekTable(weekly) {
   const today = new Date().toISOString().substring(0,10);
   const week = weekly.find(w => w.week_start <= today && w.week_end >= today);
@@ -522,12 +565,29 @@ function renderYearTable(monthly) {
   const monthNames = ['','Sausis','Vasaris','Kovas','Balandis','Gegužė','Birželis',
     'Liepa','Rugpjūtis','Rugsėjis','Spalis','Lapkritis','Gruodis'];
   const tbody = document.getElementById('year-tbody');
-  tbody.innerHTML = monthly.map(m => {
-    const diff = m.diff_seconds || 0;
+
+  // Grupuojame monthly pagal metus
+  const yearMap = {};
+  (monthly || []).forEach(m => {
+    const y = m.year;
+    if (!yearMap[y]) yearMap[y] = { worked: 0, required: 0 };
+    yearMap[y].worked   += (m.worked_seconds || 0);
+    yearMap[y].required += (m.required_seconds || 0);
+  });
+
+  const years = Object.keys(yearMap).map(Number).sort();
+  if (!years.length) {
+    tbody.innerHTML = '<tr><td colspan="4" class="c-gray">Duomenu nera</td></tr>';
+    return;
+  }
+  tbody.innerHTML = years.map(y => {
+    const w = yearMap[y].worked;
+    const r = yearMap[y].required;
+    const diff = w - r;
     return `<tr>
-      <td>${monthNames[m.month]} ${m.year}</td>
-      <td>${fmtSec(m.worked_seconds)}</td>
-      <td>${fmtSec(m.required_seconds)}</td>
+      <td class="bold">${y}</td>
+      <td>${fmtSec(w)}</td>
+      <td>${fmtSec(r)}</td>
       <td class="${diffClass(diff)}">${fmtDiff(diff)}</td>
     </tr>`;
   }).join('');
