@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TimeTracker – Ataskaita</title>
+<style>
+  :root {
+    --bg: #1f2937; --bg2: #374151; --bg3: #4b5563;
+    --text: #f9fafb; --text2: #9ca3af;
+    --accent: #60a5fa; --green: #4ade80; --red: #f87171;
+    --yellow: #fbbf24; --blue: #60a5fa; --teal: #2dd4bf;
+    --border: #4b5563;
+  }
+  .light {
+    --bg: #f9fafb; --bg2: #ffffff; --bg3: #e5e7eb;
+    --text: #111827; --text2: #6b7280;
+    --accent: #3b82f6; --green: #22c55e; --red: #ef4444;
+    --yellow: #f59e0b; --blue: #3b82f6; --teal: #14b8a6;
+    --border: #e5e7eb;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg); color: var(--text);
+    min-height: 100vh; transition: background 0.3s, color 0.3s;
+  }
+  a { color: var(--accent); }
+  /* PIN */
+  #pin-screen {
+    display: flex; align-items: center; justify-content: center;
+    min-height: 100vh; flex-direction: column; gap: 16px;
+  }
+  #pin-screen h1 { font-size: 1.8rem; }
+  #pin-inputs { display: flex; gap: 10px; }
+  #pin-inputs input {
+    width: 52px; height: 52px; text-align: center;
+    font-size: 1.4rem; border: 2px solid var(--border);
+    border-radius: 8px; background: var(--bg2); color: var(--text);
+    outline: none;
+  }
+  #pin-inputs input:focus { border-color: var(--accent); }
+  #pin-btn {
+    padding: 10px 32px; font-size: 1rem; border: none;
+    border-radius: 8px; background: var(--accent); color: #fff;
+    cursor: pointer; margin-top: 8px;
+  }
+  #pin-error { color: var(--red); min-height: 20px; font-size: 0.9rem; }
+  #pin-blocked { color: var(--yellow); font-size: 0.9rem; display: none; }
+  /* Main */
+  #main { display: none; max-width: 960px; margin: 0 auto; padding: 16px; }
+  /* Top bar */
+  .topbar {
+    background: var(--bg2); border-radius: 12px;
+    padding: 14px 20px; display: flex; flex-wrap: wrap;
+    gap: 16px; align-items: center; margin-bottom: 16px;
+    border: 1px solid var(--border);
+  }
+  .topbar-item { display: flex; flex-direction: column; }
+  .topbar-label { font-size: 0.72rem; color: var(--text2); text-transform: uppercase; letter-spacing: .05em; }
+  .topbar-value { font-size: 1.35rem; font-weight: 700; }
+  .topbar-right { margin-left: auto; display: flex; gap: 10px; align-items: center; }
+  /* Cards */
+  .card {
+    background: var(--bg2); border-radius: 12px; padding: 16px 20px;
+    margin-bottom: 16px; border: 1px solid var(--border);
+  }
+  .card h2 { font-size: 1rem; margin-bottom: 12px; color: var(--text2); text-transform: uppercase; letter-spacing: .05em; }
+  /* Progress bar */
+  .progress-wrap { background: var(--bg3); border-radius: 99px; height: 10px; overflow: hidden; margin: 6px 0; }
+  .progress-bar  { height: 100%; border-radius: 99px; transition: width .5s; }
+  /* Tables */
+  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  th { color: var(--text2); font-weight: 600; padding: 6px 8px; text-align: left; border-bottom: 1px solid var(--border); }
+  td { padding: 6px 8px; border-bottom: 1px solid var(--border); }
+  tr:last-child td { border-bottom: none; }
+  .bold { font-weight: 700; }
+  /* Status colors */
+  .c-green  { color: var(--green); }
+  .c-red    { color: var(--red); }
+  .c-yellow { color: var(--yellow); }
+  .c-blue   { color: var(--blue); }
+  .c-teal   { color: var(--teal); }
+  .c-gray   { color: var(--text2); }
+  /* Heatmap */
+  .heatmap { display: flex; flex-wrap: wrap; gap: 3px; }
+  .hm-cell {
+    width: 13px; height: 13px; border-radius: 2px;
+    background: var(--bg3); cursor: default;
+  }
+  .hm-cell[title]:hover { opacity: 0.75; }
+  /* Buttons */
+  .btn {
+    padding: 7px 16px; border: none; border-radius: 7px;
+    cursor: pointer; font-size: 0.9rem; font-family: inherit;
+  }
+  .btn-accent { background: var(--accent); color: #fff; }
+  .btn-gray   { background: var(--bg3); color: var(--text); }
+  /* Theme toggle */
+  #theme-btn { cursor: pointer; background: none; border: none; font-size: 1.3rem; }
+  /* Last updated */
+  .last-updated { font-size: 0.78rem; color: var(--text2); }
+  /* Sessions list */
+  .session-row { display: flex; gap: 12px; padding: 5px 0; border-bottom: 1px solid var(--border); font-size: 0.87rem; }
+  .session-row:last-child { border-bottom: none; }
+  .session-time { font-weight: 600; min-width: 55px; }
+  .session-type { min-width: 80px; }
+  .session-dur  { min-width: 70px; color: var(--text2); }
+  .session-meta { color: var(--text2); }
+  /* Responsive */
+  @media (max-width: 600px) {
+    .topbar { gap: 10px; }
+    .topbar-value { font-size: 1.1rem; }
+    table { font-size: 0.8rem; }
+  }
+  /* Print */
+  @media print { #pin-screen { display: none !important; } #main { display: block !important; } }
+</style>
+</head>
+<body>
+
+<!-- PIN ekranas -->
+<div id="pin-screen">
+  <h1>🔒 TimeTracker</h1>
+  <p style="color:var(--text2)">Įveskite PIN kodą:</p>
+  <div id="pin-inputs">
+    <input type="password" maxlength="1" inputmode="numeric" class="pin-digit">
+    <input type="password" maxlength="1" inputmode="numeric" class="pin-digit">
+    <input type="password" maxlength="1" inputmode="numeric" class="pin-digit">
+    <input type="password" maxlength="1" inputmode="numeric" class="pin-digit">
+    <input type="password" maxlength="1" inputmode="numeric" class="pin-digit">
+    <input type="password" maxlength="1" inputmode="numeric" class="pin-digit">
+    <input type="password" maxlength="1" inputmode="numeric" class="pin-digit">
+    <input type="password" maxlength="1" inputmode="numeric" class="pin-digit">
+  </div>
+  <div id="pin-error"></div>
+  <div id="pin-blocked"></div>
+  <button id="pin-btn" onclick="verifyPin()">Patvirtinti</button>
+  <p style="font-size:.8rem;color:var(--text2);margin-top:8px">Jei PIN nenustatytas – palikite tuščia ir spauskite Patvirtinti</p>
+</div>
+
+<!-- Pagrindinė ataskaita -->
+<div id="main">
+  <!-- Toolbar -->
+  <div class="topbar">
+    <div class="topbar-item">
+      <span class="topbar-label">Pradirbta (metai)</span>
+      <span class="topbar-value c-green" id="top-worked">—</span>
+    </div>
+    <div class="topbar-item">
+      <span class="topbar-label">Reikėjo</span>
+      <span class="topbar-value" id="top-required">—</span>
+    </div>
+    <div class="topbar-item">
+      <span class="topbar-label">Balansas</span>
+      <span class="topbar-value" id="top-balance">—</span>
+    </div>
+    <div class="topbar-right">
+      <button id="theme-btn" onclick="toggleTheme()" title="Keisti temą">🌙</button>
+      <button class="btn btn-gray" onclick="location.reload()">🔄 Atnaujinti</button>
+      <button class="btn btn-accent" onclick="window.print()">📄 PDF</button>
+      <span class="last-updated">Atnaujinta: <span id="top-updated">—</span></span>
+    </div>
+  </div>
+
+  <!-- Savaitės ritmas -->
+  <div class="card" id="card-rhythm">
+    <h2>Savaitės ritmas</h2>
+    <div id="rhythm-status" style="font-size:1.05rem;font-weight:600;margin-bottom:6px"></div>
+    <div class="progress-wrap">
+      <div class="progress-bar" id="rhythm-bar" style="width:0%;background:var(--green)"></div>
+    </div>
+    <div id="rhythm-pct" style="font-size:.85rem;color:var(--text2);margin-top:4px"></div>
+  </div>
+
+  <!-- Metinė norma -->
+  <div class="card" id="card-year-norm">
+    <h2>Metinė norma</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:20px;margin-bottom:8px">
+      <div><div class="topbar-label">Metų norma</div><div class="topbar-value" id="yn-norm">—</div></div>
+      <div><div class="topbar-label">Pradirbta</div><div class="topbar-value c-green" id="yn-worked">—</div></div>
+      <div><div class="topbar-label">Balansas</div><div class="topbar-value" id="yn-balance">—</div></div>
+      <div><div class="topbar-label">Liko dienų</div><div class="topbar-value" id="yn-days">—</div></div>
+      <div><div class="topbar-label">Reikia / dieną</div><div class="topbar-value c-yellow" id="yn-per-day">—</div></div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-bar" id="yn-bar" style="width:0%;background:var(--accent)"></div>
+    </div>
+    <div id="yn-pct" style="font-size:.85rem;color:var(--text2);margin-top:4px"></div>
+  </div>
+
+  <!-- Šiandien -->
+  <div class="card" id="card-today">
+    <h2 id="today-header">Šiandien</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;margin-bottom:8px">
+      <div><div class="topbar-label">Pradirbta</div><div class="topbar-value c-green" id="td-worked">—</div></div>
+      <div><div class="topbar-label">Reikia</div><div class="topbar-value" id="td-required">—</div></div>
+      <div><div class="topbar-label">Likutis</div><div class="topbar-value" id="td-remaining">—</div></div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-bar" id="td-bar" style="width:0%;background:var(--green)"></div>
+    </div>
+    <div id="td-pct" style="font-size:.85rem;color:var(--text2);margin-top:4px"></div>
+    <div id="sessions-list" style="margin-top:12px"></div>
+  </div>
+
+  <!-- Savaitės suvestinė -->
+  <div class="card">
+    <h2>Savaitės suvestinė</h2>
+    <table id="week-table">
+      <thead><tr><th>Diena</th><th>Data</th><th>Tipas</th><th>Pradirbta</th><th>Reikėjo</th><th>Skirtumas</th></tr></thead>
+      <tbody id="week-tbody"></tbody>
+    </table>
+  </div>
+
+  <!-- Mėnesio suvestinė -->
+  <div class="card">
+    <h2>Mėnesio suvestinė</h2>
+    <table>
+      <thead><tr><th>Savaitė</th><th>Pradirbta</th><th>Reikėjo</th><th>Skirtumas</th></tr></thead>
+      <tbody id="month-tbody"></tbody>
+    </table>
+  </div>
+
+  <!-- Metų suvestinė -->
+  <div class="card">
+    <h2>Metų suvestinė</h2>
+    <table>
+      <thead><tr><th>Mėnuo</th><th>Pradirbta</th><th>Reikėjo</th><th>Skirtumas</th></tr></thead>
+      <tbody id="year-tbody"></tbody>
+    </table>
+  </div>
+
+  <!-- Šilumos žemėlapis -->
+  <div class="card">
+    <h2>Aktyvumo žemėlapis (365 dienos)</h2>
+    <div id="heatmap" class="heatmap"></div>
+    <div style="margin-top:8px;font-size:.8rem;color:var(--text2)">
+      <span style="display:inline-block;width:12px;height:12px;background:var(--bg3);border-radius:2px;vertical-align:middle"></span> 0h &nbsp;
+      <span style="display:inline-block;width:12px;height:12px;background:#166534;border-radius:2px;vertical-align:middle"></span> 1–4h &nbsp;
+      <span style="display:inline-block;width:12px;height:12px;background:#16a34a;border-radius:2px;vertical-align:middle"></span> 4–7h &nbsp;
+      <span style="display:inline-block;width:12px;height:12px;background:var(--green);border-radius:2px;vertical-align:middle"></span> 8h+ &nbsp;
+    </div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════
+//  Pagalbinės funkcijos
+// ═══════════════════════════════════════════════════
+const DATA_URL = 'data/records.json';
+const AUTO_REFRESH_MS = 60000;
+
+function fmtSec(s) {
+  if (s == null) return '—';
+  const neg = s < 0;
+  s = Math.abs(s);
+  const h = Math.floor(s / 3600);
+  const m = Math.floor((s % 3600) / 60);
+  return (neg ? '-' : '') + String(h).padStart(2,'0') + ':' + String(m).padStart(2,'0');
+}
+
+function fmtSecFull(s) {
+  if (s == null) return '—';
+  const neg = s < 0; s = Math.abs(s);
+  const h = Math.floor(s / 3600);
+  const m = Math.floor((s % 3600) / 60);
+  const sc = s % 60;
+  return (neg?'-':'') + String(h).padStart(2,'0')+':'+String(m).padStart(2,'0')+':'+String(sc).padStart(2,'0');
+}
+
+function pct(worked, required) {
+  if (!required) return 0;
+  return Math.min(100, Math.round(worked / required * 100));
+}
+
+function diffClass(diff) {
+  if (diff > 60)  return 'c-green';
+  if (diff < -60) return 'c-red';
+  return 'c-teal';
+}
+
+function fmtDiff(diff) {
+  if (diff == null) return '—';
+  const sign = diff >= 0 ? '+' : '';
+  return sign + fmtSec(diff);
+}
+
+// ═══════════════════════════════════════════════════
+//  SHA-256 (Web Crypto)
+// ═══════════════════════════════════════════════════
+async function sha256(str) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+}
+
+// ═══════════════════════════════════════════════════
+//  PIN logika
+// ═══════════════════════════════════════════════════
+let pinAttempts = 0;
+let pinBlockedUntil = 0;
+let pinHash = '';
+
+const digits = document.querySelectorAll('.pin-digit');
+digits.forEach((d, i) => {
+  d.addEventListener('input', () => {
+    if (d.value && i < digits.length - 1) digits[i+1].focus();
+  });
+  d.addEventListener('keydown', e => {
+    if (e.key === 'Backspace' && !d.value && i > 0) digits[i-1].focus();
+    if (e.key === 'Enter') verifyPin();
+  });
+});
+
+async function verifyPin() {
+  const now = Date.now();
+  if (now < pinBlockedUntil) return;
+
+  const pin = Array.from(digits).map(d => d.value).join('');
+
+  // Jei nėra PIN hash – leidžiame be PIN
+  if (!pinHash) { unlock(); return; }
+
+  // Jei tuščias PIN pateiktas – klaidinga
+  if (!pin) {
+    document.getElementById('pin-error').textContent = 'Įveskite PIN kodą';
+    return;
+  }
+
+  const hash = await sha256(pin);
+  if (hash === pinHash) {
+    sessionStorage.setItem('tt_auth', '1');
+    unlock();
+  } else {
+    pinAttempts++;
+    if (pinAttempts >= 3) {
+      pinBlockedUntil = Date.now() + 30000;
+      pinAttempts = 0;
+      const el = document.getElementById('pin-blocked');
+      el.style.display = 'block';
+      el.textContent = 'Per daug bandymų. Palaukite 30 sekundžių.';
+      document.getElementById('pin-error').textContent = '';
+      setTimeout(() => { el.style.display = 'none'; }, 30000);
+    } else {
+      document.getElementById('pin-error').textContent =
+        `Neteisingas PIN. Liko bandymų: ${3 - pinAttempts}`;
+    }
+    digits.forEach(d => d.value = '');
+    digits[0].focus();
+  }
+}
+
+function unlock() {
+  document.getElementById('pin-screen').style.display = 'none';
+  document.getElementById('main').style.display = 'block';
+  loadData();
+  setInterval(loadData, AUTO_REFRESH_MS);
+}
+
+// ═══════════════════════════════════════════════════
+//  Duomenų užkrovimas
+// ═══════════════════════════════════════════════════
+async function loadData() {
+  try {
+    const r = await fetch(DATA_URL + '?t=' + Date.now());
+    const data = await r.json();
+    render(data);
+  } catch (e) {
+    console.error('Nepavyko užkrauti duomenų:', e);
+    document.getElementById('top-updated').textContent = 'Klaida';
+  }
+}
+
+function render(d) {
+  const s = d.summary || {};
+
+  // Topbar
+  setText('top-worked',   fmtSec(s.total_worked_seconds));
+  setText('top-required', fmtSec(s.total_required_seconds));
+  const bal = s.balance_seconds || 0;
+  setHtml('top-balance',
+    `<span class="${diffClass(bal)}">${fmtDiff(bal)}</span>`);
+  setText('top-updated', (d.last_updated||'').replace('T',' ').substring(0,16));
+
+  // Savaitės ritmas
+  const rhy = d.week_rhythm || {};
+  const diff_s = rhy.diff_seconds || 0;
+  const statusMap = { ahead: '✅ Grafike', behind: '⚠️ Atsilieka', on_track: '🎯 Tiksliai grafike' };
+  const statusClr = { ahead: 'c-green', behind: 'c-red', on_track: 'c-teal' };
+  const req_week = getWeekRequired(d.weekly);
+  const pctW = req_week ? pct(req_week + diff_s, req_week) : 0;
+  setHtml('rhythm-status',
+    `<span class="${statusClr[rhy.status]||'c-gray'}">${statusMap[rhy.status]||''} &nbsp; ${fmtDiff(diff_s)}</span>`);
+  document.getElementById('rhythm-bar').style.width = pctW + '%';
+  setText('rhythm-pct', pctW + '%');
+
+  // Metinė norma
+  const norm = s.year_norm_seconds || 0;
+  const worked = s.total_worked_seconds || 0;
+  const pctY = pct(worked, norm);
+  setText('yn-norm',    fmtSec(norm));
+  setText('yn-worked',  fmtSec(worked));
+  const ybal = s.balance_seconds || 0;
+  setHtml('yn-balance', `<span class="${diffClass(ybal)}">${fmtDiff(ybal)}</span>`);
+  setText('yn-days',    (s.year_remaining_days || 0) + ' d.');
+  setText('yn-per-day', fmtSec(s.required_per_day_with_balance || 28800));
+  document.getElementById('yn-bar').style.width = pctY + '%';
+  setText('yn-pct', pctY + '% metų normos');
+
+  // Šiandien
+  renderToday(d);
+
+  // Savaitės lentelė
+  renderWeekTable(d.weekly || []);
+
+  // Mėnesio lentelė (paskutinės savaitės)
+  renderMonthTable(d.weekly || []);
+
+  // Metų lentelė
+  renderYearTable(d.monthly || []);
+
+  // Šilumos žemėlapis
+  renderHeatmap(d.daily || []);
+}
+
+function getWeekRequired(weekly) {
+  if (!weekly || !weekly.length) return 0;
+  const today = new Date().toISOString().substring(0,10);
+  for (const w of weekly) {
+    if (w.week_start <= today && w.week_end >= today) return w.required_seconds || 0;
+  }
+  return 0;
+}
+
+function renderToday(d) {
+  const today = new Date().toISOString().substring(0,10);
+  const daily = (d.daily || []).find(x => x.date === today) || {};
+  const tw = daily.worked_seconds || 0;
+  const tr = daily.required_seconds || 0;
+  const trem = Math.max(0, tr - tw);
+  const tp = pct(tw, tr || 1);
+
+  const dayNames = ['Sekmadienis','Pirmadienis','Antradienis','Trečiadienis','Ketvirtadienis','Penktadienis','Šeštadienis'];
+  const dt = new Date(today + 'T00:00:00');
+  const dayName = dayNames[dt.getDay()];
+  const typeMap = {workday:'Darbo diena', weekend:'Savaitgalis', holiday:'Šventė'};
+  const typeStr = typeMap[daily.day_type] || '';
+  setText('today-header', `${dayName}, ${today} · ${typeStr}`);
+
+  setText('td-worked',   fmtSec(tw));
+  setText('td-required', fmtSec(tr));
+  setText('td-remaining', fmtSec(trem));
+  document.getElementById('td-bar').style.width = tp + '%';
+  const barColor = (daily.day_type === 'workday')
+    ? (tw >= tr ? 'var(--green)' : 'var(--red)') : 'var(--accent)';
+  document.getElementById('td-bar').style.background = barColor;
+  setText('td-pct', tp + '%');
+
+  // Sesijų žurnalas
+  const events = d.events || [];
+  const sl = document.getElementById('sessions-list');
+  if (!events.length) { sl.innerHTML = '<p style="color:var(--text2);font-size:.87rem">Šiandien įvykių nėra</p>'; return; }
+
+  let html = '<div style="margin-top:8px"><strong style="font-size:.9rem">Sesijų žurnalas:</strong></div>';
+  let prevPlay = null;
+  events.forEach(e => {
+    const ts = (e.timestamp||'').substring(11,19);
+    const isPlay = e.type === 'play';
+    const typeIcon = isPlay ? '▶ Pradėta' : '⏸ Sustabdyta';
+    let dur = '';
+    if (!isPlay && prevPlay) {
+      const t1 = new Date(prevPlay); const t2 = new Date(e.timestamp);
+      dur = fmtSecFull(Math.round((t2 - t1) / 1000));
+    }
+    if (isPlay) prevPlay = e.timestamp; else prevPlay = null;
+    const cat  = e.category || '';
+    const note = e.note || '';
+    html += `<div class="session-row">
+      <span class="session-time">${ts}</span>
+      <span class="session-type ${isPlay?'c-green':'c-gray'}">${typeIcon}</span>
+      <span class="session-dur">${dur}</span>
+      <span class="session-meta">${cat}${cat&&note?' · ':''}${note}</span>
+    </div>`;
+  });
+  sl.innerHTML = html;
+}
+
+function renderWeekTable(weekly) {
+  const today = new Date().toISOString().substring(0,10);
+  const week = weekly.find(w => w.week_start <= today && w.week_end >= today);
+  if (!week) { document.getElementById('week-tbody').innerHTML = '<tr><td colspan="6" class="c-gray">Duomenų nėra</td></tr>'; return; }
+
+  // Reikia dienos duomenų savaitei
+  const dayNames = ['Pirmadienis','Antradienis','Trečiadienis','Ketvirtadienis','Penktadienis','Šeštadienis','Sekmadienis'];
+  // Naudoja weekly summarize – paprastas savaitės eilutė
+  const tbody = document.getElementById('week-tbody');
+  const diff = week.diff_seconds || 0;
+  tbody.innerHTML = `<tr class="bold">
+    <td colspan="3">Savaitė ${week.week_start} – ${week.week_end}</td>
+    <td>${fmtSec(week.worked_seconds)}</td>
+    <td>${fmtSec(week.required_seconds)}</td>
+    <td class="${diffClass(diff)}">${fmtDiff(diff)}</td>
+  </tr>`;
+}
+
+function renderMonthTable(weekly) {
+  // Rodo paskutines 4 savaites
+  const tbody = document.getElementById('month-tbody');
+  const last4 = weekly.slice(-4);
+  tbody.innerHTML = last4.map(w => {
+    const diff = w.diff_seconds || 0;
+    return `<tr>
+      <td>${w.week_start} – ${w.week_end}</td>
+      <td>${fmtSec(w.worked_seconds)}</td>
+      <td>${fmtSec(w.required_seconds)}</td>
+      <td class="${diffClass(diff)}">${fmtDiff(diff)}</td>
+    </tr>`;
+  }).join('');
+}
+
+function renderYearTable(monthly) {
+  const monthNames = ['','Sausis','Vasaris','Kovas','Balandis','Gegužė','Birželis',
+    'Liepa','Rugpjūtis','Rugsėjis','Spalis','Lapkritis','Gruodis'];
+  const tbody = document.getElementById('year-tbody');
+  tbody.innerHTML = monthly.map(m => {
+    const diff = m.diff_seconds || 0;
+    return `<tr>
+      <td>${monthNames[m.month]} ${m.year}</td>
+      <td>${fmtSec(m.worked_seconds)}</td>
+      <td>${fmtSec(m.required_seconds)}</td>
+      <td class="${diffClass(diff)}">${fmtDiff(diff)}</td>
+    </tr>`;
+  }).join('');
+}
+
+function renderHeatmap(daily) {
+  const hm = document.getElementById('heatmap');
+  hm.innerHTML = '';
+  const today = new Date();
+  // 365 dienų atgal
+  for (let i = 364; i >= 0; i--) {
+    const d = new Date(today); d.setDate(d.getDate() - i);
+    const ds = d.toISOString().substring(0,10);
+    const entry = daily.find(x => x.date === ds);
+    const s = entry ? (entry.worked_seconds || 0) : 0;
+    let bg;
+    if      (s >= 28800) bg = 'var(--green)';
+    else if (s >= 14400) bg = '#16a34a';
+    else if (s >= 3600)  bg = '#166534';
+    else                 bg = 'var(--bg3)';
+    const h = Math.floor(s/3600), m = Math.floor((s%3600)/60);
+    const cell = document.createElement('div');
+    cell.className = 'hm-cell';
+    cell.style.background = bg;
+    cell.title = `${ds}: ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}`;
+    hm.appendChild(cell);
+  }
+}
+
+// ═══════════════════════════════════════════════════
+//  Tema
+// ═══════════════════════════════════════════════════
+function applyTheme(t) {
+  document.documentElement.className = t === 'light' ? 'light' : '';
+  localStorage.setItem('tt_theme', t);
+  document.getElementById('theme-btn').textContent = t === 'light' ? '🌙' : '☀️';
+}
+
+function toggleTheme() {
+  const cur = localStorage.getItem('tt_theme') || 'dark';
+  applyTheme(cur === 'dark' ? 'light' : 'dark');
+}
+
+// ═══════════════════════════════════════════════════
+//  Pagalbinės DOM
+// ═══════════════════════════════════════════════════
+function setText(id, val) { const el = document.getElementById(id); if (el) el.textContent = val; }
+function setHtml(id, val) { const el = document.getElementById(id); if (el) el.innerHTML = val; }
+
+// ═══════════════════════════════════════════════════
+//  Paleidimas
+// ═══════════════════════════════════════════════════
+(async function init() {
+  // Tema
+  applyTheme(localStorage.getItem('tt_theme') || 'dark');
+
+  // Gauna PIN hash iš duomenų
+  try {
+    const r = await fetch(DATA_URL + '?t=' + Date.now());
+    const data = await r.json();
+    pinHash = data.pin_hash || '';
+  } catch (e) {
+    pinHash = '';
+  }
+
+  // Tikrina sesiją
+  if (!pinHash || sessionStorage.getItem('tt_auth') === '1') {
+    unlock();
+  } else {
+    digits[0].focus();
+  }
+})();
+</script>
+</body>
+</html>
