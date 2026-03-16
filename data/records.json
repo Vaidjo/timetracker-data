@@ -1,142 +1,33 @@
 {
-  "last_updated": "2026-03-15T14:55:43.379513+02:00",
+  "last_updated": "2026-03-16T11:03:04.936169+02:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
     "total_worked_seconds": 77615,
     "total_required_seconds": 7286400,
-    "balance_seconds": -1333585,
+    "balance_seconds": -1362385,
     "year_norm_seconds": 7286400,
-    "year_remaining_days": 204,
-    "required_per_day_with_balance": 35337
+    "year_remaining_days": 203,
+    "required_per_day_with_balance": 35511
   },
   "week_rhythm": {
     "status": "behind",
-    "diff_seconds": -37585
+    "diff_seconds": -28800
   },
   "events": [
     {
-      "id": 94,
+      "id": 115,
       "type": "system_wake",
-      "timestamp": "2026-03-15T09:23:05.771923+02:00",
+      "timestamp": "2026-03-16T11:01:36.829688+02:00",
       "note": null
     },
     {
-      "id": 95,
+      "id": 116,
       "type": "system_wake",
-      "timestamp": "2026-03-15T09:23:06.282115+02:00",
-      "note": null
-    },
-    {
-      "id": 96,
-      "type": "play",
-      "timestamp": "2026-03-15T09:24:51.849659+02:00",
-      "note": null
-    },
-    {
-      "id": 97,
-      "type": "play",
-      "timestamp": "2026-03-15T09:24:52.942756+02:00",
-      "note": null
-    },
-    {
-      "id": 98,
-      "type": "pause",
-      "timestamp": "2026-03-15T09:24:58.669954+02:00",
-      "note": null
-    },
-    {
-      "id": 99,
-      "type": "play",
-      "timestamp": "2026-03-15T09:29:22.443573+02:00",
-      "note": null
-    },
-    {
-      "id": 100,
-      "type": "pause",
-      "timestamp": "2026-03-15T09:29:25.128507+02:00",
-      "note": null
-    },
-    {
-      "id": 101,
-      "type": "play",
-      "timestamp": "2026-03-15T09:40:26.520001+02:00",
-      "note": null
-    },
-    {
-      "id": 102,
-      "type": "pause",
-      "timestamp": "2026-03-15T09:57:43.920291+02:00",
-      "note": null
-    },
-    {
-      "id": 103,
-      "type": "play",
-      "timestamp": "2026-03-15T10:02:40.481145+02:00",
-      "note": null
-    },
-    {
-      "id": 104,
-      "type": "pause",
-      "timestamp": "2026-03-15T10:52:11.554843+02:00",
-      "note": null
-    },
-    {
-      "id": 105,
-      "type": "play",
-      "timestamp": "2026-03-15T12:56:51.551112+02:00",
-      "note": null
-    },
-    {
-      "id": 106,
-      "type": "screen_off",
-      "timestamp": "2026-03-15T13:11:59.882974+02:00",
-      "note": null
-    },
-    {
-      "id": 107,
-      "type": "pause",
-      "timestamp": "2026-03-15T13:11:59.889099+02:00",
-      "note": null
-    },
-    {
-      "id": 108,
-      "type": "screen_on",
-      "timestamp": "2026-03-15T13:21:40.773370+02:00",
-      "note": null
-    },
-    {
-      "id": 109,
-      "type": "play",
-      "timestamp": "2026-03-15T13:21:40.789165+02:00",
-      "note": null
-    },
-    {
-      "id": 110,
-      "type": "pause",
-      "timestamp": "2026-03-15T14:16:18.963591+02:00",
-      "note": null
-    },
-    {
-      "id": 111,
-      "type": "play",
-      "timestamp": "2026-03-15T14:30:09.188438+02:00",
-      "note": null
-    },
-    {
-      "id": 112,
-      "type": "pause",
-      "timestamp": "2026-03-15T14:53:34.022242+02:00",
+      "timestamp": "2026-03-16T11:01:39.325307+02:00",
       "note": null
     }
   ],
   "daily": [
-    {
-      "date": "2025-12-16",
-      "worked_seconds": 0,
-      "required_seconds": 28800,
-      "day_type": "workday",
-      "diff_seconds": -28800
-    },
     {
       "date": "2025-12-17",
       "worked_seconds": 0,
@@ -759,16 +650,16 @@
       "required_seconds": 0,
       "day_type": "weekend",
       "diff_seconds": 9611
+    },
+    {
+      "date": "2026-03-16",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
     }
   ],
   "weekly": [
-    {
-      "week_start": "2025-12-22",
-      "week_end": "2025-12-28",
-      "worked_seconds": 0,
-      "required_seconds": 86400,
-      "diff_seconds": -86400
-    },
     {
       "week_start": "2025-12-29",
       "week_end": "2026-01-04",
@@ -845,6 +736,13 @@
       "worked_seconds": 77615,
       "required_seconds": 115200,
       "diff_seconds": -37585
+    },
+    {
+      "week_start": "2026-03-16",
+      "week_end": "2026-03-22",
+      "worked_seconds": 0,
+      "required_seconds": 144000,
+      "diff_seconds": -144000
     }
   ],
   "monthly": [
