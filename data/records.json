@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-31T14:30:29.031533+03:00",
+  "last_updated": "2026-03-31T14:32:53.440551+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
     "total_worked_seconds": 238871,
@@ -84,6 +84,12 @@
       "id": 313,
       "type": "pause",
       "timestamp": "2026-03-31T13:17:51.099099+03:00",
+      "note": null
+    },
+    {
+      "id": 314,
+      "type": "play",
+      "timestamp": "2026-03-31T14:32:53.364737+03:00",
       "note": null
     }
   ],
