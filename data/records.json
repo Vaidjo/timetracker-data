@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-17T20:26:47.291913+03:00",
+  "last_updated": "2026-04-17T20:15:37.918355+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
     "total_worked_seconds": 570143,
@@ -192,18 +192,6 @@
       "id": 596,
       "type": "system_wake",
       "timestamp": "2026-04-17T20:13:01.020364+03:00",
-      "note": null
-    },
-    {
-      "id": 597,
-      "type": "system_wake",
-      "timestamp": "2026-04-17T20:20:11.797625+03:00",
-      "note": null
-    },
-    {
-      "id": 598,
-      "type": "system_wake",
-      "timestamp": "2026-04-17T20:20:12.475251+03:00",
       "note": null
     }
   ],
@@ -957,9 +945,9 @@
     {
       "year": 2026,
       "month": 5,
-      "worked_seconds": 26749,
+      "worked_seconds": 0,
       "required_seconds": 576000,
-      "diff_seconds": -549251
+      "diff_seconds": -576000
     },
     {
       "year": 2026,
