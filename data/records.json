@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-04-24T08:40:58.373289+03:00",
+  "last_updated": "2026-04-24T08:46:00.251324+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
-    "total_worked_seconds": 684692,
+    "total_worked_seconds": 684968,
     "total_required_seconds": 7286400,
-    "balance_seconds": -1561708,
+    "balance_seconds": -1561432,
     "year_norm_seconds": 7286400,
     "year_remaining_days": 175,
-    "required_per_day_with_balance": 37724
+    "required_per_day_with_balance": 37722
   },
   "week_rhythm": {
     "status": "behind",
-    "diff_seconds": -32047
+    "diff_seconds": -31771
   },
   "events": [
     {
@@ -30,6 +30,30 @@
       "id": 683,
       "type": "play",
       "timestamp": "2026-04-24T08:04:21.629320+03:00",
+      "note": null
+    },
+    {
+      "id": 684,
+      "type": "screen_off",
+      "timestamp": "2026-04-24T08:45:05.250402+03:00",
+      "note": null
+    },
+    {
+      "id": 685,
+      "type": "pause",
+      "timestamp": "2026-04-24T08:45:05.254432+03:00",
+      "note": null
+    },
+    {
+      "id": 686,
+      "type": "screen_on",
+      "timestamp": "2026-04-24T08:45:30.549659+03:00",
+      "note": null
+    },
+    {
+      "id": 687,
+      "type": "play",
+      "timestamp": "2026-04-24T08:45:30.557177+03:00",
       "note": null
     }
   ],
@@ -659,10 +683,10 @@
     },
     {
       "date": "2026-04-24",
-      "worked_seconds": 2196,
+      "worked_seconds": 2472,
       "required_seconds": 28800,
       "day_type": "workday",
-      "diff_seconds": -26604
+      "diff_seconds": -26328
     }
   ],
   "weekly": [
@@ -746,9 +770,9 @@
     {
       "week_start": "2026-04-20",
       "week_end": "2026-04-26",
-      "worked_seconds": 111953,
+      "worked_seconds": 112229,
       "required_seconds": 144000,
-      "diff_seconds": -32047
+      "diff_seconds": -31771
     }
   ],
   "monthly": [
@@ -776,9 +800,9 @@
     {
       "year": 2026,
       "month": 4,
-      "worked_seconds": 438772,
+      "worked_seconds": 439048,
       "required_seconds": 604800,
-      "diff_seconds": -166028
+      "diff_seconds": -165752
     },
     {
       "year": 2026,
@@ -846,9 +870,9 @@
     },
     {
       "year": 2026,
-      "worked_seconds": 684692,
+      "worked_seconds": 684968,
       "norm_seconds": 7286400,
-      "diff_seconds": -6601708
+      "diff_seconds": -6601432
     }
   ]
 }
