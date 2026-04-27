@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-27T14:59:43.024904+03:00",
+  "last_updated": "2026-04-27T15:02:46.438791+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
     "total_worked_seconds": 737444,
@@ -48,6 +48,12 @@
       "id": 706,
       "type": "pause",
       "timestamp": "2026-04-27T14:40:03.088944+03:00",
+      "note": null
+    },
+    {
+      "id": 707,
+      "type": "play",
+      "timestamp": "2026-04-27T15:02:46.323977+03:00",
       "note": null
     }
   ],
