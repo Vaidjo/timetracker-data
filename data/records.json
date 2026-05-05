@@ -1,238 +1,33 @@
 {
-  "last_updated": "2026-05-04T18:27:54.130567+03:00",
+  "last_updated": "2026-05-05T09:06:57.112280+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
     "total_worked_seconds": 855687,
     "total_required_seconds": 7286400,
-    "balance_seconds": -1534713,
+    "balance_seconds": -1563513,
     "year_norm_seconds": 7286400,
-    "year_remaining_days": 170,
-    "required_per_day_with_balance": 37827
+    "year_remaining_days": 169,
+    "required_per_day_with_balance": 38051
   },
   "week_rhythm": {
     "status": "behind",
-    "diff_seconds": -4234
+    "diff_seconds": -33034
   },
   "events": [
     {
-      "id": 776,
+      "id": 811,
       "type": "system_wake",
-      "timestamp": "2026-05-04T08:37:50.102168+03:00",
+      "timestamp": "2026-05-05T09:05:18.148231+03:00",
       "note": null
     },
     {
-      "id": 777,
+      "id": 812,
       "type": "system_wake",
-      "timestamp": "2026-05-04T08:37:52.359714+03:00",
-      "note": null
-    },
-    {
-      "id": 778,
-      "type": "play",
-      "timestamp": "2026-05-04T10:12:02.268970+03:00",
-      "note": null
-    },
-    {
-      "id": 779,
-      "type": "pause",
-      "timestamp": "2026-05-04T10:24:23.589753+03:00",
-      "note": null
-    },
-    {
-      "id": 780,
-      "type": "play",
-      "timestamp": "2026-05-04T10:44:24.970242+03:00",
-      "note": null
-    },
-    {
-      "id": 781,
-      "type": "screen_off",
-      "timestamp": "2026-05-04T11:21:34.681336+03:00",
-      "note": null
-    },
-    {
-      "id": 782,
-      "type": "pause",
-      "timestamp": "2026-05-04T11:21:34.685310+03:00",
-      "note": null
-    },
-    {
-      "id": 783,
-      "type": "screen_on",
-      "timestamp": "2026-05-04T11:25:58.683506+03:00",
-      "note": null
-    },
-    {
-      "id": 784,
-      "type": "play",
-      "timestamp": "2026-05-04T11:35:29.289051+03:00",
-      "note": null
-    },
-    {
-      "id": 785,
-      "type": "screen_off",
-      "timestamp": "2026-05-04T11:40:30.274909+03:00",
-      "note": null
-    },
-    {
-      "id": 786,
-      "type": "pause",
-      "timestamp": "2026-05-04T11:40:30.281511+03:00",
-      "note": null
-    },
-    {
-      "id": 787,
-      "type": "screen_on",
-      "timestamp": "2026-05-04T11:48:58.365233+03:00",
-      "note": null
-    },
-    {
-      "id": 788,
-      "type": "play",
-      "timestamp": "2026-05-04T11:48:58.416758+03:00",
-      "note": null
-    },
-    {
-      "id": 789,
-      "type": "screen_off",
-      "timestamp": "2026-05-04T13:03:42.558986+03:00",
-      "note": null
-    },
-    {
-      "id": 791,
-      "type": "system_lock",
-      "timestamp": "2026-05-04T13:18:42.613618+03:00",
-      "note": null
-    },
-    {
-      "id": 790,
-      "type": "pause",
-      "timestamp": "2026-05-04T13:18:42.614077+03:00",
-      "note": null
-    },
-    {
-      "id": 792,
-      "type": "play",
-      "timestamp": "2026-05-04T13:25:35.714588+03:00",
-      "note": null
-    },
-    {
-      "id": 793,
-      "type": "pause",
-      "timestamp": "2026-05-04T14:30:10.804875+03:00",
-      "note": null
-    },
-    {
-      "id": 794,
-      "type": "play",
-      "timestamp": "2026-05-04T14:35:25.327498+03:00",
-      "note": null
-    },
-    {
-      "id": 795,
-      "type": "screen_off",
-      "timestamp": "2026-05-04T14:40:26.287770+03:00",
-      "note": null
-    },
-    {
-      "id": 796,
-      "type": "pause",
-      "timestamp": "2026-05-04T14:40:26.288870+03:00",
-      "note": null
-    },
-    {
-      "id": 797,
-      "type": "screen_on",
-      "timestamp": "2026-05-04T14:49:49.729692+03:00",
-      "note": null
-    },
-    {
-      "id": 798,
-      "type": "play",
-      "timestamp": "2026-05-04T14:49:49.745457+03:00",
-      "note": null
-    },
-    {
-      "id": 799,
-      "type": "pause",
-      "timestamp": "2026-05-04T15:28:13.191390+03:00",
-      "note": null
-    },
-    {
-      "id": 800,
-      "type": "play",
-      "timestamp": "2026-05-04T16:12:06.587155+03:00",
-      "note": null
-    },
-    {
-      "id": 801,
-      "type": "pause",
-      "timestamp": "2026-05-04T16:13:29.507170+03:00",
-      "note": null
-    },
-    {
-      "id": 802,
-      "type": "play",
-      "timestamp": "2026-05-04T16:31:15.813302+03:00",
-      "note": null
-    },
-    {
-      "id": 803,
-      "type": "screen_off",
-      "timestamp": "2026-05-04T17:11:42.364886+03:00",
-      "note": null
-    },
-    {
-      "id": 804,
-      "type": "pause",
-      "timestamp": "2026-05-04T17:11:42.367016+03:00",
-      "note": null
-    },
-    {
-      "id": 805,
-      "type": "screen_on",
-      "timestamp": "2026-05-04T17:14:49.264164+03:00",
-      "note": null
-    },
-    {
-      "id": 806,
-      "type": "play",
-      "timestamp": "2026-05-04T17:14:49.344436+03:00",
-      "note": null
-    },
-    {
-      "id": 807,
-      "type": "screen_off",
-      "timestamp": "2026-05-04T17:42:52.890167+03:00",
-      "note": null
-    },
-    {
-      "id": 808,
-      "type": "screen_on",
-      "timestamp": "2026-05-04T17:45:31.500036+03:00",
-      "note": null
-    },
-    {
-      "id": 809,
-      "type": "play",
-      "timestamp": "2026-05-04T17:45:31.522594+03:00",
-      "note": null
-    },
-    {
-      "id": 810,
-      "type": "pause",
-      "timestamp": "2026-05-04T18:27:54.010572+03:00",
+      "timestamp": "2026-05-05T09:05:19.052741+03:00",
       "note": null
     }
   ],
   "daily": [
-    {
-      "date": "2026-02-04",
-      "worked_seconds": 0,
-      "required_seconds": 28800,
-      "day_type": "workday",
-      "diff_seconds": -28800
-    },
     {
       "date": "2026-02-05",
       "worked_seconds": 0,
@@ -855,6 +650,13 @@
       "required_seconds": 28800,
       "day_type": "workday",
       "diff_seconds": -4234
+    },
+    {
+      "date": "2026-05-05",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
     }
   ],
   "weekly": [
