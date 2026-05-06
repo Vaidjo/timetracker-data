@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-06T17:07:35.502686+03:00",
+  "last_updated": "2026-05-06T17:12:37.487586+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
     "total_worked_seconds": 904647,
@@ -866,9 +866,9 @@
     {
       "year": 2026,
       "month": 4,
-      "worked_seconds": 601390,
+      "worked_seconds": 577791,
       "required_seconds": 604800,
-      "diff_seconds": -3410
+      "diff_seconds": -27009
     },
     {
       "year": 2026,
