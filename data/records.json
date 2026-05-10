@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-09T16:07:07.808372+03:00",
+  "last_updated": "2026-05-10T09:10:53.935737+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
     "total_worked_seconds": 969176,
@@ -15,74 +15,19 @@
   },
   "events": [
     {
-      "id": 891,
+      "id": 901,
       "type": "system_wake",
-      "timestamp": "2026-05-09T08:49:16.284516+03:00",
+      "timestamp": "2026-05-10T09:07:31.121446+03:00",
       "note": null
     },
     {
-      "id": 892,
+      "id": 902,
       "type": "system_wake",
-      "timestamp": "2026-05-09T08:49:19.666864+03:00",
-      "note": null
-    },
-    {
-      "id": 893,
-      "type": "play",
-      "timestamp": "2026-05-09T08:54:08.443212+03:00",
-      "note": null
-    },
-    {
-      "id": 894,
-      "type": "pause",
-      "timestamp": "2026-05-09T08:54:39.327644+03:00",
-      "note": null
-    },
-    {
-      "id": 895,
-      "type": "play",
-      "timestamp": "2026-05-09T09:09:43.060876+03:00",
-      "note": null
-    },
-    {
-      "id": 896,
-      "type": "pause",
-      "timestamp": "2026-05-09T10:02:28.091787+03:00",
-      "note": null
-    },
-    {
-      "id": 897,
-      "type": "system_wake",
-      "timestamp": "2026-05-09T13:59:18.079167+03:00",
-      "note": null
-    },
-    {
-      "id": 898,
-      "type": "system_wake",
-      "timestamp": "2026-05-09T13:59:18.136810+03:00",
-      "note": null
-    },
-    {
-      "id": 899,
-      "type": "play",
-      "timestamp": "2026-05-09T14:00:32.093215+03:00",
-      "note": null
-    },
-    {
-      "id": 900,
-      "type": "pause",
-      "timestamp": "2026-05-09T16:07:07.675537+03:00",
+      "timestamp": "2026-05-10T09:07:32.351185+03:00",
       "note": null
     }
   ],
   "daily": [
-    {
-      "date": "2026-02-09",
-      "worked_seconds": 0,
-      "required_seconds": 28800,
-      "day_type": "workday",
-      "diff_seconds": -28800
-    },
     {
       "date": "2026-02-10",
       "worked_seconds": 0,
@@ -705,6 +650,13 @@
       "required_seconds": 0,
       "day_type": "weekend",
       "diff_seconds": 10790
+    },
+    {
+      "date": "2026-05-10",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
     }
   ],
   "weekly": [
