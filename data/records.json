@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T08:40:38.423760+03:00",
+  "last_updated": "2026-05-17T08:36:38.572808+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
     "total_worked_seconds": 1107075,
@@ -13,26 +13,7 @@
     "status": "behind",
     "diff_seconds": -14051
   },
-  "events": [
-    {
-      "id": 996,
-      "type": "system_wake",
-      "timestamp": "2026-05-17T08:36:38.729571+03:00",
-      "note": null
-    },
-    {
-      "id": 997,
-      "type": "system_wake",
-      "timestamp": "2026-05-17T08:36:39.342288+03:00",
-      "note": null
-    },
-    {
-      "id": 998,
-      "type": "play",
-      "timestamp": "2026-05-17T08:40:38.279012+03:00",
-      "note": null
-    }
-  ],
+  "events": [],
   "daily": [
     {
       "date": "2026-02-17",
