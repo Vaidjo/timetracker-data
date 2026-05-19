@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-05-19T17:34:47.584477+03:00",
+  "last_updated": "2026-05-19T17:39:49.855613+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
-    "total_worked_seconds": 1141909,
+    "total_worked_seconds": 1142034,
     "total_required_seconds": 7286400,
-    "balance_seconds": -1565291,
+    "balance_seconds": -1565166,
     "year_norm_seconds": 7286400,
     "year_remaining_days": 159,
-    "required_per_day_with_balance": 38644
+    "required_per_day_with_balance": 38643
   },
   "week_rhythm": {
     "status": "behind",
-    "diff_seconds": -27747
+    "diff_seconds": -27622
   },
   "events": [
     {
@@ -78,6 +78,18 @@
       "id": 1031,
       "type": "play",
       "timestamp": "2026-05-19T15:58:48.532640+03:00",
+      "note": null
+    },
+    {
+      "id": 1032,
+      "type": "screen_off",
+      "timestamp": "2026-05-19T17:36:52.089877+03:00",
+      "note": null
+    },
+    {
+      "id": 1033,
+      "type": "pause",
+      "timestamp": "2026-05-19T17:36:52.095615+03:00",
       "note": null
     }
   ],
@@ -707,10 +719,10 @@
     },
     {
       "date": "2026-05-19",
-      "worked_seconds": 8870,
+      "worked_seconds": 8995,
       "required_seconds": 28800,
       "day_type": "workday",
-      "diff_seconds": -19930
+      "diff_seconds": -19805
     }
   ],
   "weekly": [
@@ -794,9 +806,9 @@
     {
       "week_start": "2026-05-18",
       "week_end": "2026-05-24",
-      "worked_seconds": 29853,
+      "worked_seconds": 29978,
       "required_seconds": 144000,
-      "diff_seconds": -114147
+      "diff_seconds": -114022
     }
   ],
   "monthly": [
@@ -831,9 +843,9 @@
     {
       "year": 2026,
       "month": 5,
-      "worked_seconds": 318199,
+      "worked_seconds": 318323,
       "required_seconds": 576000,
-      "diff_seconds": -257801
+      "diff_seconds": -257677
     },
     {
       "year": 2026,
@@ -894,9 +906,9 @@
     },
     {
       "year": 2026,
-      "worked_seconds": 1141910,
+      "worked_seconds": 1142034,
       "norm_seconds": 7286400,
-      "diff_seconds": -6144490
+      "diff_seconds": -6144366
     }
   ]
 }
