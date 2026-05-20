@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-20T13:02:40.212565+03:00",
+  "last_updated": "2026-05-20T13:07:42.750190+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
     "total_worked_seconds": 1158726,
@@ -7,7 +7,7 @@
     "balance_seconds": -1577274,
     "year_norm_seconds": 7286400,
     "year_remaining_days": 158,
-    "required_per_day_with_balance": 38782
+    "required_per_day_with_balance": 38706
   },
   "week_rhythm": {
     "status": "behind",
