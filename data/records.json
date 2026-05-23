@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-05-23T09:32:59.264070+03:00",
+  "last_updated": "2026-05-23T09:34:04.861864+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
-    "total_worked_seconds": 1231160,
+    "total_worked_seconds": 1231226,
     "total_required_seconds": 7286400,
-    "balance_seconds": -1562440,
+    "balance_seconds": -1562374,
     "year_norm_seconds": 7286400,
     "year_remaining_days": 156,
     "required_per_day_with_balance": 38815
   },
   "week_rhythm": {
     "status": "behind",
-    "diff_seconds": -24895
+    "diff_seconds": -24830
   },
   "events": [
     {
@@ -30,6 +30,12 @@
       "id": 1107,
       "type": "play",
       "timestamp": "2026-05-23T08:55:05.173372+03:00",
+      "note": null
+    },
+    {
+      "id": 1108,
+      "type": "pause",
+      "timestamp": "2026-05-23T09:34:04.701508+03:00",
       "note": null
     }
   ],
@@ -659,10 +665,10 @@
     },
     {
       "date": "2026-05-23",
-      "worked_seconds": 2274,
+      "worked_seconds": 2339,
       "required_seconds": 0,
       "day_type": "weekend",
-      "diff_seconds": 2274
+      "diff_seconds": 2339
     }
   ],
   "weekly": [
@@ -746,9 +752,9 @@
     {
       "week_start": "2026-05-18",
       "week_end": "2026-05-24",
-      "worked_seconds": 119105,
+      "worked_seconds": 119170,
       "required_seconds": 144000,
-      "diff_seconds": -24895
+      "diff_seconds": -24830
     }
   ],
   "monthly": [
@@ -783,9 +789,9 @@
     {
       "year": 2026,
       "month": 5,
-      "worked_seconds": 407450,
+      "worked_seconds": 407515,
       "required_seconds": 576000,
-      "diff_seconds": -168550
+      "diff_seconds": -168485
     },
     {
       "year": 2026,
@@ -846,9 +852,9 @@
     },
     {
       "year": 2026,
-      "worked_seconds": 1231161,
+      "worked_seconds": 1231226,
       "norm_seconds": 7286400,
-      "diff_seconds": -6055239
+      "diff_seconds": -6055174
     }
   ]
 }
