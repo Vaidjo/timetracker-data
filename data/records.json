@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T17:10:37.140498+03:00",
+  "last_updated": "2026-05-29T18:10:37.750428+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
     "total_worked_seconds": 1344297,
@@ -126,6 +126,18 @@
       "id": 1203,
       "type": "pause",
       "timestamp": "2026-05-29T17:10:36.972142+03:00",
+      "note": null
+    },
+    {
+      "id": 1204,
+      "type": "system_wake",
+      "timestamp": "2026-05-29T18:08:53.650659+03:00",
+      "note": null
+    },
+    {
+      "id": 1205,
+      "type": "system_wake",
+      "timestamp": "2026-05-29T18:08:54.575250+03:00",
       "note": null
     }
   ],
