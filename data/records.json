@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T10:01:31.790085+03:00",
+  "last_updated": "2026-05-31T09:40:18.535981+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
     "total_worked_seconds": 1344297,
@@ -15,26 +15,19 @@
   },
   "events": [
     {
-      "id": 1206,
+      "id": 1208,
       "type": "system_wake",
-      "timestamp": "2026-05-30T08:43:51.043379+03:00",
+      "timestamp": "2026-05-31T09:16:48.090300+03:00",
       "note": null
     },
     {
-      "id": 1207,
+      "id": 1209,
       "type": "system_wake",
-      "timestamp": "2026-05-30T08:43:51.602011+03:00",
+      "timestamp": "2026-05-31T09:16:48.677887+03:00",
       "note": null
     }
   ],
   "daily": [
-    {
-      "date": "2026-03-02",
-      "worked_seconds": 0,
-      "required_seconds": 28800,
-      "day_type": "workday",
-      "diff_seconds": -28800
-    },
     {
       "date": "2026-03-03",
       "worked_seconds": 0,
@@ -653,6 +646,13 @@
     },
     {
       "date": "2026-05-30",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-05-31",
       "worked_seconds": 0,
       "required_seconds": 0,
       "day_type": "weekend",
