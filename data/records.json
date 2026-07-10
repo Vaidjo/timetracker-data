@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-07-10T15:16:15.300272+03:00",
+  "last_updated": "2026-07-10T15:21:17.597580+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
     "total_worked_seconds": 2011982,
     "total_required_seconds": 7286400,
-    "balance_seconds": -1713456,
+    "balance_seconds": -1732018,
     "year_norm_seconds": 7286400,
     "year_remaining_days": 123,
     "required_per_day_with_balance": 42881
