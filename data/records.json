@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-07-27T11:26:07.180087+03:00",
+  "last_updated": "2026-07-27T11:28:33.929109+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
-    "total_worked_seconds": 2340079,
+    "total_worked_seconds": 2340372,
     "total_required_seconds": 7286400,
-    "balance_seconds": -1720721,
+    "balance_seconds": -1720428,
     "year_norm_seconds": 7286400,
     "year_remaining_days": 112,
-    "required_per_day_with_balance": 44163
+    "required_per_day_with_balance": 44160
   },
   "week_rhythm": {
     "status": "behind",
-    "diff_seconds": -18199
+    "diff_seconds": -17906
   },
   "events": [
     {
@@ -78,6 +78,12 @@
       "id": 2056,
       "type": "play",
       "timestamp": "2026-07-27T10:55:58.396187+03:00",
+      "note": null
+    },
+    {
+      "id": 2057,
+      "type": "pause",
+      "timestamp": "2026-07-27T11:28:33.662690+03:00",
       "note": null
     }
   ],
@@ -707,10 +713,10 @@
     },
     {
       "date": "2026-07-27",
-      "worked_seconds": 10601,
+      "worked_seconds": 10894,
       "required_seconds": 28800,
       "day_type": "workday",
-      "diff_seconds": -18199
+      "diff_seconds": -17906
     }
   ],
   "weekly": [
@@ -794,9 +800,9 @@
     {
       "week_start": "2026-07-27",
       "week_end": "2026-08-02",
-      "worked_seconds": 10601,
+      "worked_seconds": 10894,
       "required_seconds": 144000,
-      "diff_seconds": -133399
+      "diff_seconds": -133106
     }
   ],
   "monthly": [
@@ -845,9 +851,9 @@
     {
       "year": 2026,
       "month": 7,
-      "worked_seconds": 477469,
+      "worked_seconds": 477762,
       "required_seconds": 633600,
-      "diff_seconds": -156131
+      "diff_seconds": -155838
     },
     {
       "year": 2026,
@@ -894,9 +900,9 @@
     },
     {
       "year": 2026,
-      "worked_seconds": 2340079,
+      "worked_seconds": 2340372,
       "norm_seconds": 7286400,
-      "diff_seconds": -4946321
+      "diff_seconds": -4946028
     }
   ]
 }
