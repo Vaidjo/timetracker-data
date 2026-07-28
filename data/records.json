@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-07-28T18:55:32.402544+03:00",
+  "last_updated": "2026-07-28T19:00:29.736636+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
-    "total_worked_seconds": 2386658,
+    "total_worked_seconds": 2387253,
     "total_required_seconds": 7286400,
-    "balance_seconds": -1702942,
+    "balance_seconds": -1702347,
     "year_norm_seconds": 7286400,
     "year_remaining_days": 111,
-    "required_per_day_with_balance": 44141
+    "required_per_day_with_balance": 44136
   },
   "week_rhythm": {
-    "status": "behind",
-    "diff_seconds": -420
+    "status": "ahead",
+    "diff_seconds": 175
   },
   "events": [
     {
@@ -72,6 +72,12 @@
       "id": 2083,
       "type": "play",
       "timestamp": "2026-07-28T17:00:54.886270+03:00",
+      "note": null
+    },
+    {
+      "id": 2084,
+      "type": "pause",
+      "timestamp": "2026-07-28T19:00:29.484258+03:00",
       "note": null
     }
   ],
@@ -701,10 +707,10 @@
     },
     {
       "date": "2026-07-28",
-      "worked_seconds": 27606,
+      "worked_seconds": 28201,
       "required_seconds": 28800,
       "day_type": "workday",
-      "diff_seconds": -1194
+      "diff_seconds": -599
     }
   ],
   "weekly": [
@@ -788,9 +794,9 @@
     {
       "week_start": "2026-07-27",
       "week_end": "2026-08-02",
-      "worked_seconds": 57180,
+      "worked_seconds": 57775,
       "required_seconds": 144000,
-      "diff_seconds": -86820
+      "diff_seconds": -86225
     }
   ],
   "monthly": [
@@ -839,9 +845,9 @@
     {
       "year": 2026,
       "month": 7,
-      "worked_seconds": 524048,
+      "worked_seconds": 524643,
       "required_seconds": 633600,
-      "diff_seconds": -109552
+      "diff_seconds": -108957
     },
     {
       "year": 2026,
@@ -888,9 +894,9 @@
     },
     {
       "year": 2026,
-      "worked_seconds": 2386659,
+      "worked_seconds": 2387253,
       "norm_seconds": 7286400,
-      "diff_seconds": -4899741
+      "diff_seconds": -4899147
     }
   ]
 }
