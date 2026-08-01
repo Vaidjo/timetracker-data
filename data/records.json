@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-01T14:17:13.987981+03:00",
+  "last_updated": "2026-08-01T14:27:17.953480+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
     "total_worked_seconds": 2372302,
@@ -60,6 +60,12 @@
       "id": 2148,
       "type": "pause",
       "timestamp": "2026-08-01T14:16:07.367009+03:00",
+      "note": null
+    },
+    {
+      "id": 2149,
+      "type": "screen_on",
+      "timestamp": "2026-08-01T14:19:45.504341+03:00",
       "note": null
     }
   ],
