@@ -1,88 +1,33 @@
 {
-  "last_updated": "2026-08-03T17:47:16.030027+03:00",
+  "last_updated": "2026-08-04T08:57:46.482051+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
     "total_worked_seconds": 2388436,
     "total_required_seconds": 7286400,
-    "balance_seconds": -1816364,
+    "balance_seconds": -1845164,
     "year_norm_seconds": 7286400,
-    "year_remaining_days": 107,
-    "required_per_day_with_balance": 45775
+    "year_remaining_days": 106,
+    "required_per_day_with_balance": 46207
   },
   "week_rhythm": {
     "status": "behind",
-    "diff_seconds": -18377
+    "diff_seconds": -47177
   },
   "events": [
     {
-      "id": 2154,
+      "id": 2164,
       "type": "system_wake",
-      "timestamp": "2026-08-03T08:21:52.756743+03:00",
+      "timestamp": "2026-08-04T08:53:31.779813+03:00",
       "note": null
     },
     {
-      "id": 2155,
+      "id": 2165,
       "type": "system_wake",
-      "timestamp": "2026-08-03T08:21:52.805470+03:00",
-      "note": null
-    },
-    {
-      "id": 2156,
-      "type": "play",
-      "timestamp": "2026-08-03T09:22:00.582196+03:00",
-      "note": null
-    },
-    {
-      "id": 2157,
-      "type": "pause",
-      "timestamp": "2026-08-03T09:22:02.210266+03:00",
-      "note": null
-    },
-    {
-      "id": 2158,
-      "type": "system_wake",
-      "timestamp": "2026-08-03T13:26:17.769549+03:00",
-      "note": null
-    },
-    {
-      "id": 2159,
-      "type": "system_wake",
-      "timestamp": "2026-08-03T13:26:18.162850+03:00",
-      "note": null
-    },
-    {
-      "id": 2160,
-      "type": "play",
-      "timestamp": "2026-08-03T13:27:12.053480+03:00",
-      "note": null
-    },
-    {
-      "id": 2161,
-      "type": "pause",
-      "timestamp": "2026-08-03T14:22:05.662064+03:00",
-      "note": null
-    },
-    {
-      "id": 2162,
-      "type": "play",
-      "timestamp": "2026-08-03T14:26:04.752315+03:00",
-      "note": null
-    },
-    {
-      "id": 2163,
-      "type": "pause",
-      "timestamp": "2026-08-03T16:24:54.680543+03:00",
+      "timestamp": "2026-08-04T08:53:32.215688+03:00",
       "note": null
     }
   ],
   "daily": [
-    {
-      "date": "2026-05-06",
-      "worked_seconds": 23071,
-      "required_seconds": 28800,
-      "day_type": "workday",
-      "diff_seconds": -5729
-    },
     {
       "date": "2026-05-07",
       "worked_seconds": 29422,
@@ -705,6 +650,13 @@
       "required_seconds": 28800,
       "day_type": "workday",
       "diff_seconds": -18377
+    },
+    {
+      "date": "2026-08-04",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
     }
   ],
   "weekly": [
