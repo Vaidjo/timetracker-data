@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-13T10:13:31.285912+03:00",
+  "last_updated": "2026-08-13T10:17:55.172556+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
-    "total_worked_seconds": 2562068,
+    "total_worked_seconds": 2565377,
     "total_required_seconds": 7286400,
     "balance_seconds": -1873132,
     "year_norm_seconds": 7286400,
@@ -42,6 +42,12 @@
       "id": 2356,
       "type": "pause",
       "timestamp": "2026-08-13T09:58:01.554449+03:00",
+      "note": null
+    },
+    {
+      "id": 2357,
+      "type": "play",
+      "timestamp": "2026-08-13T10:17:54.723573+03:00",
       "note": null
     }
   ],
