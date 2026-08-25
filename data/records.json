@@ -1,208 +1,33 @@
 {
-  "last_updated": "2026-08-24T18:18:24.665738+03:00",
+  "last_updated": "2026-08-25T09:21:33.813143+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
-    "total_worked_seconds": 2679282,
+    "total_worked_seconds": 2681082,
     "total_required_seconds": 7286400,
-    "balance_seconds": -1957518,
+    "balance_seconds": -1984518,
     "year_norm_seconds": 7286400,
-    "year_remaining_days": 92,
-    "required_per_day_with_balance": 50077
+    "year_remaining_days": 91,
+    "required_per_day_with_balance": 50607
   },
   "week_rhythm": {
     "status": "behind",
-    "diff_seconds": -5197
+    "diff_seconds": -32197
   },
   "events": [
     {
-      "id": 2471,
-      "type": "play",
-      "timestamp": "2026-08-24T08:20:30.913771+03:00",
+      "id": 2501,
+      "type": "system_wake",
+      "timestamp": "2026-08-25T09:21:02.809057+03:00",
       "note": null
     },
     {
-      "id": 2472,
-      "type": "pause",
-      "timestamp": "2026-08-24T08:20:33.083875+03:00",
-      "note": null
-    },
-    {
-      "id": 2473,
-      "type": "play",
-      "timestamp": "2026-08-24T08:42:12.612838+03:00",
-      "note": null
-    },
-    {
-      "id": 2474,
-      "type": "pause",
-      "timestamp": "2026-08-24T09:08:34.662104+03:00",
-      "note": null
-    },
-    {
-      "id": 2475,
-      "type": "play",
-      "timestamp": "2026-08-24T10:02:30.277488+03:00",
-      "note": null
-    },
-    {
-      "id": 2476,
-      "type": "pause",
-      "timestamp": "2026-08-24T10:07:11.120198+03:00",
-      "note": null
-    },
-    {
-      "id": 2477,
-      "type": "play",
-      "timestamp": "2026-08-24T10:08:14.695930+03:00",
-      "note": null
-    },
-    {
-      "id": 2478,
-      "type": "screen_off",
-      "timestamp": "2026-08-24T10:13:16.509659+03:00",
-      "note": null
-    },
-    {
-      "id": 2479,
-      "type": "pause",
-      "timestamp": "2026-08-24T10:13:16.514679+03:00",
-      "note": null
-    },
-    {
-      "id": 2480,
-      "type": "screen_on",
-      "timestamp": "2026-08-24T10:18:52.693537+03:00",
-      "note": null
-    },
-    {
-      "id": 2481,
-      "type": "play",
-      "timestamp": "2026-08-24T10:18:52.698127+03:00",
-      "note": null
-    },
-    {
-      "id": 2483,
-      "type": "screen_off",
-      "timestamp": "2026-08-24T11:14:24.937229+03:00",
-      "note": null
-    },
-    {
-      "id": 2482,
-      "type": "pause",
-      "timestamp": "2026-08-24T11:14:24.944450+03:00",
-      "note": null
-    },
-    {
-      "id": 2484,
-      "type": "screen_on",
-      "timestamp": "2026-08-24T11:17:04.377555+03:00",
-      "note": null
-    },
-    {
-      "id": 2485,
-      "type": "play",
-      "timestamp": "2026-08-24T11:17:21.294839+03:00",
-      "note": null
-    },
-    {
-      "id": 2486,
-      "type": "pause",
-      "timestamp": "2026-08-24T12:27:02.805349+03:00",
-      "note": null
-    },
-    {
-      "id": 2487,
-      "type": "play",
-      "timestamp": "2026-08-24T14:13:13.162608+03:00",
-      "note": null
-    },
-    {
-      "id": 2488,
-      "type": "screen_off",
-      "timestamp": "2026-08-24T15:26:51.896858+03:00",
-      "note": null
-    },
-    {
-      "id": 2489,
-      "type": "pause",
-      "timestamp": "2026-08-24T15:26:51.898254+03:00",
-      "note": null
-    },
-    {
-      "id": 2490,
-      "type": "screen_on",
-      "timestamp": "2026-08-24T15:30:31.437904+03:00",
-      "note": null
-    },
-    {
-      "id": 2491,
-      "type": "play",
-      "timestamp": "2026-08-24T15:30:31.448295+03:00",
-      "note": null
-    },
-    {
-      "id": 2492,
-      "type": "screen_off",
-      "timestamp": "2026-08-24T16:41:47.612046+03:00",
-      "note": null
-    },
-    {
-      "id": 2493,
-      "type": "pause",
-      "timestamp": "2026-08-24T16:41:47.614079+03:00",
-      "note": null
-    },
-    {
-      "id": 2494,
-      "type": "screen_on",
-      "timestamp": "2026-08-24T16:43:55.229249+03:00",
-      "note": null
-    },
-    {
-      "id": 2495,
-      "type": "play",
-      "timestamp": "2026-08-24T16:43:55.239107+03:00",
-      "note": null
-    },
-    {
-      "id": 2496,
-      "type": "screen_off",
-      "timestamp": "2026-08-24T17:57:34.757219+03:00",
-      "note": null
-    },
-    {
-      "id": 2497,
-      "type": "pause",
-      "timestamp": "2026-08-24T17:57:34.759112+03:00",
-      "note": null
-    },
-    {
-      "id": 2498,
-      "type": "screen_on",
-      "timestamp": "2026-08-24T18:04:52.249358+03:00",
-      "note": null
-    },
-    {
-      "id": 2499,
-      "type": "play",
-      "timestamp": "2026-08-24T18:04:52.252308+03:00",
-      "note": null
-    },
-    {
-      "id": 2500,
-      "type": "pause",
-      "timestamp": "2026-08-24T18:18:24.379056+03:00",
+      "id": 2502,
+      "type": "system_wake",
+      "timestamp": "2026-08-25T09:21:03.391118+03:00",
       "note": null
     }
   ],
   "daily": [
-    {
-      "date": "2026-05-27",
-      "worked_seconds": 24799,
-      "required_seconds": 28800,
-      "day_type": "workday",
-      "diff_seconds": -4001
-    },
     {
       "date": "2026-05-28",
       "worked_seconds": 26350,
@@ -821,10 +646,17 @@
     },
     {
       "date": "2026-08-24",
-      "worked_seconds": 23603,
+      "worked_seconds": 25403,
       "required_seconds": 28800,
       "day_type": "workday",
-      "diff_seconds": -5197
+      "diff_seconds": -3397
+    },
+    {
+      "date": "2026-08-25",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
     }
   ],
   "weekly": [
@@ -908,9 +740,9 @@
     {
       "week_start": "2026-08-24",
       "week_end": "2026-08-30",
-      "worked_seconds": 23603,
+      "worked_seconds": 25403,
       "required_seconds": 144000,
-      "diff_seconds": -120397
+      "diff_seconds": -118597
     }
   ],
   "monthly": [
@@ -966,9 +798,9 @@
     {
       "year": 2026,
       "month": 8,
-      "worked_seconds": 312955,
+      "worked_seconds": 314755,
       "required_seconds": 604800,
-      "diff_seconds": -291845
+      "diff_seconds": -290045
     },
     {
       "year": 2026,
@@ -1008,9 +840,9 @@
     },
     {
       "year": 2026,
-      "worked_seconds": 2679282,
+      "worked_seconds": 2681082,
       "norm_seconds": 7286400,
-      "diff_seconds": -4607118
+      "diff_seconds": -4605318
     }
   ]
 }
