@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-28T12:47:48.056005+03:00",
+  "last_updated": "2026-08-28T12:52:07.886255+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
-    "total_worked_seconds": 2769653,
+    "total_worked_seconds": 2783023,
     "total_required_seconds": 7286400,
     "balance_seconds": -1982347,
     "year_norm_seconds": 7286400,
