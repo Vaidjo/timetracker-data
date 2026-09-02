@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-02T07:43:46.215782+03:00",
+  "last_updated": "2026-09-02T07:48:37.414430+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
-    "total_worked_seconds": 2837691,
+    "total_worked_seconds": 2841116,
     "total_required_seconds": 7286400,
     "balance_seconds": -1997284,
     "year_norm_seconds": 7286400,
@@ -13,7 +13,14 @@
     "status": "behind",
     "diff_seconds": -27382
   },
-  "events": [],
+  "events": [
+    {
+      "id": 2628,
+      "type": "play",
+      "timestamp": "2026-09-02T07:48:37.125416+03:00",
+      "note": null
+    }
+  ],
   "daily": [
     {
       "date": "2026-06-05",
