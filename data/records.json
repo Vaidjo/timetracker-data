@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-09T18:32:47.118968+03:00",
+  "last_updated": "2026-09-09T18:36:49.666121+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
     "total_worked_seconds": 2994351,
@@ -7,7 +7,7 @@
     "balance_seconds": -1988049,
     "year_norm_seconds": 7286400,
     "year_remaining_days": 80,
-    "required_per_day_with_balance": 53635
+    "required_per_day_with_balance": 53650
   },
   "week_rhythm": {
     "status": "behind",
@@ -78,6 +78,12 @@
       "id": 2722,
       "type": "system_wake",
       "timestamp": "2026-09-09T18:21:40.077763+03:00",
+      "note": null
+    },
+    {
+      "id": 2723,
+      "type": "play",
+      "timestamp": "2026-09-09T18:36:49.383718+03:00",
       "note": null
     }
   ],
