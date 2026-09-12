@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-12T15:57:48.866959+03:00",
+  "last_updated": "2026-09-12T16:07:51.575505+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
     "total_worked_seconds": 3039812,
@@ -797,9 +797,9 @@
     {
       "week_start": "2026-08-17",
       "week_end": "2026-08-23",
-      "worked_seconds": 69641,
+      "worked_seconds": 45092,
       "required_seconds": 144000,
-      "diff_seconds": -74359
+      "diff_seconds": -98908
     },
     {
       "week_start": "2026-08-24",
