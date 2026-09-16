@@ -1,13 +1,14 @@
 {
-  "last_updated": "2026-09-16T16:19:40.941822+03:00",
+  "last_updated": "2026-09-16T16:54:21.314513+03:00",
   "pin_hash": "aae926696962ac62d25d90cec9fe1b2d02b211b13469c8136acf0bb2ffcb229d",
   "summary": {
     "total_worked_seconds": 3130639,
-    "total_required_seconds": 7286400,
+    "total_required_seconds": 7228800,
+    "required_so_far_seconds": 5126400,
     "balance_seconds": -1995761,
-    "year_norm_seconds": 7286400,
-    "year_remaining_days": 75,
-    "required_per_day_with_balance": 55410
+    "year_norm_seconds": 7228800,
+    "year_remaining_days": 73,
+    "required_per_day_with_balance": 56139
   },
   "week_rhythm": {
     "status": "behind",
@@ -280,6 +281,1931 @@
     }
   ],
   "daily": [
+    {
+      "date": "2025-09-17",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-09-18",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-09-19",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-09-20",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-09-21",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-09-22",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-09-23",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-09-24",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-09-25",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-09-26",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-09-27",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-09-28",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-09-29",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-09-30",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-01",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-02",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-03",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-04",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-10-05",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-10-06",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-07",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-08",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-09",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-10",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-11",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-10-12",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-10-13",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-14",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-15",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-16",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-17",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-18",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-10-19",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-10-20",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-21",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-22",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-23",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-24",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-25",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-10-26",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-10-27",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-28",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-29",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-30",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-10-31",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-01",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "holiday",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-11-02",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "holiday",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-11-03",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-04",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-05",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-06",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-07",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-08",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-11-09",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-11-10",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-11",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-12",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-13",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-14",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-15",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-11-16",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-11-17",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-18",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-19",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-20",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-21",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-22",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-11-23",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-11-24",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-25",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-26",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-27",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-28",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-11-29",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-11-30",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-12-01",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-12-02",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-12-03",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-12-04",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-12-05",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-12-06",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-12-07",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-12-08",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-12-09",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-12-10",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-12-11",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-12-12",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-12-13",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-12-14",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-12-15",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-12-16",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-12-17",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-12-18",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-12-19",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-12-20",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-12-21",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-12-22",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-12-23",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-12-24",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "holiday",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-12-25",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "holiday",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-12-26",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "holiday",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-12-27",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-12-28",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2025-12-29",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-12-30",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2025-12-31",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-01",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "holiday",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-01-02",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-03",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-01-04",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-01-05",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-06",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-07",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-08",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-09",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-10",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-01-11",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-01-12",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-13",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-14",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-15",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-16",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-17",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-01-18",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-01-19",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-20",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-21",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-22",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-23",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-24",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-01-25",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-01-26",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-27",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-28",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-29",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-30",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-01-31",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-02-01",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-02-02",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-02-03",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-02-04",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-02-05",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-02-06",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-02-07",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-02-08",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-02-09",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-02-10",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-02-11",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-02-12",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-02-13",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-02-14",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-02-15",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-02-16",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "holiday",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-02-17",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-02-18",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-02-19",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-02-20",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-02-21",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-02-22",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-02-23",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-02-24",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-02-25",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-02-26",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-02-27",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-02-28",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-03-01",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-03-02",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-03-03",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-03-04",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-03-05",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-03-06",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-03-07",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-03-08",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-03-09",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-03-10",
+      "worked_seconds": 21600,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -7200
+    },
+    {
+      "date": "2026-03-11",
+      "worked_seconds": 3600,
+      "required_seconds": 0,
+      "day_type": "holiday",
+      "diff_seconds": 3600
+    },
+    {
+      "date": "2026-03-12",
+      "worked_seconds": 19355,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -9445
+    },
+    {
+      "date": "2026-03-13",
+      "worked_seconds": 21624,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -7176
+    },
+    {
+      "date": "2026-03-14",
+      "worked_seconds": 1366,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 1366
+    },
+    {
+      "date": "2026-03-15",
+      "worked_seconds": 9606,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 9606
+    },
+    {
+      "date": "2026-03-16",
+      "worked_seconds": 20069,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -8731
+    },
+    {
+      "date": "2026-03-17",
+      "worked_seconds": 21031,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -7769
+    },
+    {
+      "date": "2026-03-18",
+      "worked_seconds": 26791,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -2009
+    },
+    {
+      "date": "2026-03-19",
+      "worked_seconds": 8787,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -20013
+    },
+    {
+      "date": "2026-03-20",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-03-21",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-03-22",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-03-23",
+      "worked_seconds": 2305,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -26495
+    },
+    {
+      "date": "2026-03-24",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-03-25",
+      "worked_seconds": 491,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28309
+    },
+    {
+      "date": "2026-03-26",
+      "worked_seconds": 4934,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -23866
+    },
+    {
+      "date": "2026-03-27",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-03-28",
+      "worked_seconds": 16789,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 16789
+    },
+    {
+      "date": "2026-03-29",
+      "worked_seconds": 13094,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 13094
+    },
+    {
+      "date": "2026-03-30",
+      "worked_seconds": 20953,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -7847
+    },
+    {
+      "date": "2026-03-31",
+      "worked_seconds": 18782,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -10018
+    },
+    {
+      "date": "2026-04-01",
+      "worked_seconds": 25658,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -3142
+    },
+    {
+      "date": "2026-04-02",
+      "worked_seconds": 17008,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -11792
+    },
+    {
+      "date": "2026-04-03",
+      "worked_seconds": 21296,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -7504
+    },
+    {
+      "date": "2026-04-04",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-04-05",
+      "worked_seconds": 3425,
+      "required_seconds": 0,
+      "day_type": "holiday",
+      "diff_seconds": 3425
+    },
+    {
+      "date": "2026-04-06",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "holiday",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-04-07",
+      "worked_seconds": 15410,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -13390
+    },
+    {
+      "date": "2026-04-08",
+      "worked_seconds": 31566,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": 2766
+    },
+    {
+      "date": "2026-04-09",
+      "worked_seconds": 28984,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": 184
+    },
+    {
+      "date": "2026-04-10",
+      "worked_seconds": 28333,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -467
+    },
+    {
+      "date": "2026-04-11",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-04-12",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-04-13",
+      "worked_seconds": 25230,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -3570
+    },
+    {
+      "date": "2026-04-14",
+      "worked_seconds": 24249,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -4551
+    },
+    {
+      "date": "2026-04-15",
+      "worked_seconds": 30772,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": 1972
+    },
+    {
+      "date": "2026-04-16",
+      "worked_seconds": 29374,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": 574
+    },
+    {
+      "date": "2026-04-17",
+      "worked_seconds": 26749,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -2051
+    },
+    {
+      "date": "2026-04-18",
+      "worked_seconds": 2596,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 2596
+    },
+    {
+      "date": "2026-04-19",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-04-20",
+      "worked_seconds": 22780,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -6020
+    },
+    {
+      "date": "2026-04-21",
+      "worked_seconds": 29528,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": 728
+    },
+    {
+      "date": "2026-04-22",
+      "worked_seconds": 28840,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": 40
+    },
+    {
+      "date": "2026-04-23",
+      "worked_seconds": 28609,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -191
+    },
+    {
+      "date": "2026-04-24",
+      "worked_seconds": 27235,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -1565
+    },
+    {
+      "date": "2026-04-25",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-04-26",
+      "worked_seconds": 8792,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 8792
+    },
+    {
+      "date": "2026-04-27",
+      "worked_seconds": 29105,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": 305
+    },
+    {
+      "date": "2026-04-28",
+      "worked_seconds": 28177,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -623
+    },
+    {
+      "date": "2026-04-29",
+      "worked_seconds": 28761,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -39
+    },
+    {
+      "date": "2026-04-30",
+      "worked_seconds": 19145,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -9655
+    },
+    {
+      "date": "2026-05-01",
+      "worked_seconds": 4850,
+      "required_seconds": 0,
+      "day_type": "holiday",
+      "diff_seconds": 4850
+    },
+    {
+      "date": "2026-05-02",
+      "worked_seconds": 2560,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 2560
+    },
+    {
+      "date": "2026-05-03",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "holiday",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-05-04",
+      "worked_seconds": 22024,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -6776
+    },
+    {
+      "date": "2026-05-05",
+      "worked_seconds": 26326,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -2474
+    },
+    {
+      "date": "2026-05-06",
+      "worked_seconds": 23071,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -5729
+    },
+    {
+      "date": "2026-05-07",
+      "worked_seconds": 29422,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": 622
+    },
+    {
+      "date": "2026-05-08",
+      "worked_seconds": 20657,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -8143
+    },
+    {
+      "date": "2026-05-09",
+      "worked_seconds": 10790,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 10790
+    },
+    {
+      "date": "2026-05-10",
+      "worked_seconds": 7950,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 7950
+    },
+    {
+      "date": "2026-05-11",
+      "worked_seconds": 23029,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -5771
+    },
+    {
+      "date": "2026-05-12",
+      "worked_seconds": 14003,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -14797
+    },
+    {
+      "date": "2026-05-13",
+      "worked_seconds": 28601,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -199
+    },
+    {
+      "date": "2026-05-14",
+      "worked_seconds": 28068,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -732
+    },
+    {
+      "date": "2026-05-15",
+      "worked_seconds": 31112,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": 2312
+    },
+    {
+      "date": "2026-05-16",
+      "worked_seconds": 3793,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 3793
+    },
+    {
+      "date": "2026-05-17",
+      "worked_seconds": 4981,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 4981
+    },
+    {
+      "date": "2026-05-18",
+      "worked_seconds": 20983,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -7817
+    },
+    {
+      "date": "2026-05-19",
+      "worked_seconds": 13689,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -15111
+    },
+    {
+      "date": "2026-05-20",
+      "worked_seconds": 28007,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -793
+    },
+    {
+      "date": "2026-05-21",
+      "worked_seconds": 25245,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -3555
+    },
+    {
+      "date": "2026-05-22",
+      "worked_seconds": 20100,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -8700
+    },
+    {
+      "date": "2026-05-23",
+      "worked_seconds": 2339,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 2339
+    },
+    {
+      "date": "2026-05-24",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-05-25",
+      "worked_seconds": 12812,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -15988
+    },
+    {
+      "date": "2026-05-26",
+      "worked_seconds": 23095,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -5705
+    },
+    {
+      "date": "2026-05-27",
+      "worked_seconds": 24799,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -4001
+    },
+    {
+      "date": "2026-05-28",
+      "worked_seconds": 26350,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -2450
+    },
+    {
+      "date": "2026-05-29",
+      "worked_seconds": 26015,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -2785
+    },
+    {
+      "date": "2026-05-30",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-05-31",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-06-01",
+      "worked_seconds": 21461,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -7339
+    },
+    {
+      "date": "2026-06-02",
+      "worked_seconds": 19821,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -8979
+    },
+    {
+      "date": "2026-06-03",
+      "worked_seconds": 0,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -28800
+    },
+    {
+      "date": "2026-06-04",
+      "worked_seconds": 24518,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -4282
+    },
+    {
+      "date": "2026-06-05",
+      "worked_seconds": 28359,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -441
+    },
+    {
+      "date": "2026-06-06",
+      "worked_seconds": 14923,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 14923
+    },
+    {
+      "date": "2026-06-07",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "holiday",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-06-08",
+      "worked_seconds": 24115,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -4685
+    },
+    {
+      "date": "2026-06-09",
+      "worked_seconds": 19447,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -9353
+    },
+    {
+      "date": "2026-06-10",
+      "worked_seconds": 26924,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -1876
+    },
+    {
+      "date": "2026-06-11",
+      "worked_seconds": 27811,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -989
+    },
+    {
+      "date": "2026-06-12",
+      "worked_seconds": 30824,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": 2024
+    },
+    {
+      "date": "2026-06-13",
+      "worked_seconds": 2755,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 2755
+    },
+    {
+      "date": "2026-06-14",
+      "worked_seconds": 0,
+      "required_seconds": 0,
+      "day_type": "weekend",
+      "diff_seconds": 0
+    },
+    {
+      "date": "2026-06-15",
+      "worked_seconds": 28714,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -86
+    },
+    {
+      "date": "2026-06-16",
+      "worked_seconds": 22944,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -5856
+    },
+    {
+      "date": "2026-06-17",
+      "worked_seconds": 22323,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -6477
+    },
+    {
+      "date": "2026-06-18",
+      "worked_seconds": 21892,
+      "required_seconds": 28800,
+      "day_type": "workday",
+      "diff_seconds": -6908
+    },
     {
       "date": "2026-06-19",
       "worked_seconds": 6512,
@@ -1072,29 +2998,29 @@
       "year": 2026,
       "month": 11,
       "worked_seconds": 0,
-      "required_seconds": 604800,
-      "diff_seconds": -604800
+      "required_seconds": 576000,
+      "diff_seconds": -576000
     },
     {
       "year": 2026,
       "month": 12,
       "worked_seconds": 0,
-      "required_seconds": 633600,
-      "diff_seconds": -633600
+      "required_seconds": 604800,
+      "diff_seconds": -604800
     }
   ],
   "yearly": [
     {
       "year": 2025,
       "worked_seconds": 0,
-      "norm_seconds": 7286400,
-      "diff_seconds": -7286400
+      "norm_seconds": 7257600,
+      "diff_seconds": -7257600
     },
     {
       "year": 2026,
       "worked_seconds": 3130639,
-      "norm_seconds": 7286400,
-      "diff_seconds": -4155761
+      "norm_seconds": 7228800,
+      "diff_seconds": -4098161
     }
   ]
 }
